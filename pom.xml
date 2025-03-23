@@ -20,6 +20,7 @@
         <module>order-service/order-dataaccess</module>
         <module>order-service/order-domain/order-domain-core</module>
         <module>common</module>
+        <module>infrastructure</module>
     </modules>
 
     <properties>
