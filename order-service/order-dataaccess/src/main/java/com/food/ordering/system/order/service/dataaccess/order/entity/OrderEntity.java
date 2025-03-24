@@ -15,6 +15,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
@@ -33,7 +34,7 @@ public class OrderEntity {
     private UUID customerId;
     private UUID restaurantId;
     private UUID trackingId;
-    private UUID price;
+    private BigDecimal price;
     @Enumerated(EnumType.STRING)
     private OrderStatus orderStatus;
     private String failureMessages;
