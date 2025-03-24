@@ -28,3 +28,4 @@ replay_pid*
 
 target/
 /infrastructure/docker-compose/volumes*
+/infrastructure/kafka/kafka-model/src/main/java/com/food/ordering/system/kafka/order/avro*
