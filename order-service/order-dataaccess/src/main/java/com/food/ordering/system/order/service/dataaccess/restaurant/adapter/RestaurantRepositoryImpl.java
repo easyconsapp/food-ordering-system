@@ -29,7 +29,7 @@ public class RestaurantRepositoryImpl implements RestaurantRepository {
                 restaurantDataAccessMapper.restaurantToRestaurantProducts(restaurant);
 
         Optional<List<RestaurantEntity>> restaurantEntities = restaurantJpaRepository
-                .findByRestaurantIdAndProductIn(restaurant.getId().getValue(),
+                .findByRestaurantIdAndProductIdIn(restaurant.getId().getValue(),
                     restaurantProducts);
         return restaurantEntities.map(restaurantDataAccessMapper::restaurantEntityToRestaurant);
     }
